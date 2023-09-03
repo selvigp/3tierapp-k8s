@@ -1,1 +1,1 @@
-# 3tierapp-k8s
+# Host a 3-tier web app using kubernetes cluster
