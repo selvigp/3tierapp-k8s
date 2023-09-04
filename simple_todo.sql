@@ -43,10 +43,10 @@ CREATE TABLE IF NOT EXISTS `todos` (
 --
 
 INSERT INTO `todos` (`id`, `todo`, `completed`, `created_at`, `updated_at`) VALUES
-(37, 'a simple todo list', '0', NULL, NULL),
-(38, 'I will go to peshawar', '0', NULL, NULL),
-(40, 'this is very bad', '0', NULL, NULL),
-(41, 'this is very bad', '0', NULL, NULL);
+(37, 'Client followup', '0', NULL, NULL),
+(38, 'Review code', '0', NULL, NULL),
+(40, 'Push the code for delivery', '0', NULL, NULL),
+(41, 'Feedback from client', '0', NULL, NULL);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

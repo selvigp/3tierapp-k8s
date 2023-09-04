@@ -12,7 +12,7 @@
 			}else{
 				echo "<script>alert('Please Inserted Todo');</script>";
 			}
-			
+			a
 			
 	}
 
@@ -94,7 +94,7 @@
 		$query = "Update todos set todo = '$todo' where id = '$id' ";
 		$result = mysqli_query($connection,$query);
 		if (mysqli_error($connection)) {
-			die(mysqli_error($connection));
+			die(mysqli_er4ror($connection));
 		}
 	}
  ?>
@@ -103,7 +103,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>A Basic Todo</title>
+	<title>Todo Application</title>
 		<style type="text/css">
 		input[type="text"]{
 			padding: 10px 20px 10px 20px;
@@ -133,8 +133,8 @@
 			text-align: center;
 			text-decoration: none;
 			display: inline-block;
-			font-size: 12px;
-			margin: 4px 2px;
+			font-size: 14px;
+			margin: 6px 4px;
 			cursor: pointer;
 		}
 		
@@ -145,7 +145,7 @@
 	<form method="post" action="index.php">
 		<div>
 			<center>
-			<input type="text" name="todo" placeholder="create new todo" value="<?php if (isset($_POST['update_id'])) {echo $data['todo'];}  ?>" required>
+			<input type="text" name="todo" placeholder="New tasks" value="<?php if (isset($_POST['update_id'])) {echo $data['todo'];}  ?>" required>
 			<input type="hidden" name="id" value="<?php if (isset($_POST['update_id'])) {echo $data['id'];}  ?>" >
 			<input class="button" type="submit" value="Submit">
 			</center>
